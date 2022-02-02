@@ -1,0 +1,96 @@
+.how__title {
+  margin-bottom: 50px;
+}
+
+.how__list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.how__list__item {
+  position: relative;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333;
+  outline: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.how__list__item:not(:last-child) {
+  margin-right: 86px;
+}
+
+.how__list__item::after {
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  border: 2px solid #ff9900;
+}
+
+.how__list__item:focus::after {
+  content: "";
+}
+
+.how__list__item:hover {
+  color: #ff9900;
+}
+
+.how__list__item:active {
+  color: #e1670e;
+}
+
+.item-active {
+  color: #ff9900;
+}
+
+.how__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.how__left__title {
+  font-size: 24px;
+  line-height: 32px;
+  color: #333;
+  margin-top: 45px;
+}
+
+.how__left__description {
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
+  width: 758px;
+  margin-top: 8px;
+}
+
+.how__button {
+  margin-top: 50px;
+}
+
+.how__btn {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  width: 175px;
+  height: 60px;
+  transition: background 0.3s ease;
+}
+
+.how__btn:focus,
+.how__btn:hover {
+  background: #f7b045;
+}
+
+.how__btn:active {
+  background: #e1670e;
+}
+
+.how__right {
+  background-image: url("../img/how.jpeg");
+  width: 870px;
+  height: 460px;
+  margin-top: 45px;
+}
