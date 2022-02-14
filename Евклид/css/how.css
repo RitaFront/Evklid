@@ -94,3 +94,97 @@
   height: 460px;
   margin-top: 45px;
 }
+
+@media (max-width: 1919px) {
+  .how__right {
+    width: 437px;
+    height: 689px;
+  }
+  .how__left__description {
+    max-width: 437px;
+  }
+  .how__left__title {
+    margin-top: 50px;
+  }
+  .how__left {
+    margin-right: 50px;
+  }
+  .how__right {
+    background-image: url("../img/how1024.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 62px;
+  }
+  .how__button {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 1023px) {
+  /* .how__list {
+    justify-content: space-between;
+  } */
+  .how__list__item:not(:last-child) {
+    margin-right: 155px;
+  }
+  .how__info {
+    flex-direction: column-reverse;
+  }
+  .how__right {
+    margin-top: 50px;
+    background-image: url("../img/how786.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 668px;
+    height: 284px;
+  }
+  .how__left {
+    margin-right: 0;
+  }
+  .how__left__title {
+    margin-top: 38px;
+  }
+  .how__left__description {
+    max-width: 667px;
+  }
+}
+
+@media (max-width: 767px) {
+  .how__list {
+    margin-top: 16px;
+  }
+  .how__title {
+    margin-bottom: 0;
+  }
+  .how__list__item {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .how__list__item:not(:last-child) {
+    margin-right: 44px;
+  }
+  .how__right {
+    margin-top: 16px;
+    width: 290px;
+    height: 160px;
+  }
+  .how__left__title {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .how__left__description {
+    max-width: 290px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .how__button {
+    margin-top: 16px;
+  }
+  .how__btn {
+    width: 162px;
+    height: 42px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

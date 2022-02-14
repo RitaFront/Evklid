@@ -1,10 +1,9 @@
 .about__description {
   margin-top: 20px;
   margin-bottom: 50px;
-  width: 1235px;
-  height: 195px;
+  max-width: 1235px;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 32px;
   color: #333;
 }
 
@@ -15,6 +14,9 @@
 
 .about__left {
   position: relative;
+}
+
+.about__left__img {
   background-image: url("../img/about.jpeg");
   width: 868px;
   height: 622px;
@@ -93,4 +95,126 @@
   color: #333;
   margin-top: 8px;
   width: 450px;
+}
+
+.oppacity-mobile {
+  display: none;
+}
+
+.oppacity-mobile_info {
+  font-size: 14px;
+  line-height: 28px;
+  max-width: 290px;
+}
+
+.oppacity-mobile__btn {
+  width: 162px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #ff9900;
+  border: 2px solid #ff9900;
+}
+
+@media (max-width: 1919px) {
+  .about__info {
+    flex-direction: column;
+  }
+  .about__left__img {
+    width: 924px;
+    height: 640px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .oppacity {
+    width: 924px;
+  }
+  .about__right {
+    width: 100%;
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .about__left__img {
+    width: 668px;
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+  }
+  .oppacity {
+    width: 668px;
+    padding: 40px;
+  }
+  .about__right {
+    max-width: 668px;
+  }
+  .about__right__content {
+    max-height: 235px;
+  }
+  .about__right__content__icon {
+    margin-left: 40px;
+    margin-right: 16px;
+  }
+  .about__right__content__icon svg {
+    width: 114px;
+    height: 99px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about__description {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+  .about__left__img {
+    width: 290px;
+    height: 200px;
+  }
+  .oppacity {
+    display: none;
+  }
+  .about__right {
+    max-width: 290px;
+  }
+  .about__right__content {
+    border: none;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    max-height: unset;
+  }
+  .about__right__content__icon {
+    margin: 0;
+  }
+  .about__right__content__icon svg {
+    width: 64px;
+    height: 49px;
+  }
+  .about__right__content__title {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    max-width: 290px;
+    margin-top: 12px;
+  }
+  .about__right__content__description {
+    font-size: 14px;
+    line-height: 28px;
+    max-width: 290px;
+  }
+  .about__right__content:first-child {
+    margin-bottom: 32px;
+  }
+  .oppacity-mobile {
+    display: block;
+  }
+  .oppacity-mobile_info {
+    margin-top: 8px;
+  }
+  .oppacity-mobile__btn {
+    margin-top: 8px;
+  }
 }
